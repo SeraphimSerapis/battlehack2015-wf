@@ -1,8 +1,9 @@
 doctype html
 html
   head
-    title= title
+    title BattleHack
     meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    link(rel='shortcut icon' href='/images/favicon.ico')
     link(rel='stylesheet', href='/components/bootstrap/dist/css/bootstrap.min.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
@@ -16,8 +17,10 @@ html
           h3.panel-title v.zero
         div.panel-body
           block content
+    div.container
+        img.img-responsive#logo(src='/images/finals.png')
     footer.footer
       div.container
-        img(src='/images/bt.png')
+        img.img-responsive#brand(src='/images/bt.png')
     script(src='/components/bootstrap/dist/js/bootstrap.min.js')
     script(src='/components/jquery/dist/jquery.min.js')
