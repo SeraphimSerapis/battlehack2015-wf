@@ -11,3 +11,9 @@ displays a Braintree v.zero JavaScript integration and triggers a Particle Core 
 4. Navigate to `localhost:3000` to open the page
 5. Enter a valid Braintree test credit card like `4111 1111 1111 1111` and a valid card expiry date
 6. Execute the payment & enjoy
+
+## Connecting the hardware
+
+The project uses a Particle Core in order to trigger a relay to turn on power on a connected device. Check out [sketch.ino](sketch.ino) to see the (very minimal) code.
+
+In order to make this project work with your own Particle device you'll want to change the `deviceID` and `token` variables in [index.js](routes/index.js).
