@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  form(method='POST', action='/pay')
+    div#checkout
+    input.btn(type='submit', value='PARTY!')
+  script(src='https://js.braintreegateway.com/v2/braintree.js')
+  script.
+      braintree.setup('#{clientToken}', 'dropin', {
+        container: 'checkout'
+      });

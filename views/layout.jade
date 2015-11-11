@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    title= title
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    link(rel='stylesheet', href='/components/bootstrap/dist/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    nav.navbar.navbar-inverse.navbar-fixed-top
+      div.container
+        div.navbar-header
+          a.navbar-brand BattleHack World Finals 2015
+    div.container#content
+      div.panel.panel-default
+        div.panel-heading
+          h3.panel-title v.zero
+        div.panel-body
+          block content
+    footer.footer
+      div.container
+        img(src='/images/bt.png')
+    script(src='/components/bootstrap/dist/js/bootstrap.min.js')
+    script(src='/components/jquery/dist/jquery.min.js')

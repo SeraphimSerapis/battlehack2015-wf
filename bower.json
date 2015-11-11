@@ -1,0 +1,16 @@
+{
+  "name": "battlehack_wf",
+  "version": "0.0.0",
+  "authors": [
+    "Tim Messerschmidt <timmesserschmidt@gmail.com>"
+  ],
+  "description": "Demo application for BattleHack World Finals 2015",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
