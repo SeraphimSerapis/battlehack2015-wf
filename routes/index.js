@@ -3,7 +3,6 @@ var router = express.Router();
 var spotify = require('spotify-node-applescript');
 var request = require('request');
 
-// TODO
 var deviceID = '54ff6e066667515148431567';
 var token = '8716bbb1e83ac488c9eb877cfa68aba83a688108';
 var formData = {
@@ -43,9 +42,6 @@ router.post('/pay', function (req, res) {
         url: 'https://api.particle.io/v1/devices/' + deviceID + '/pay',
         form: formData
       }, function (err, httpResponse, body) {
-        console.log(err);
-        console.log(httpResponse);
-        console.log(body);
         spotify.playTrack('spotify:track:5cP52DlDN9yryuZVQDg3iq', function () {
           res.render('disco', { transaction: response.transaction });
         });
